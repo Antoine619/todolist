@@ -7,6 +7,7 @@
 	--purple: #8B5CF6;
 	--light: #EEE;
 	--green: #00FF00;
+	--tan: #D2B48C;
 }
 
 * {
@@ -147,7 +148,7 @@ main {
 }
 
 .task .actions .edit {
-	color: purple;
+	color: var(--light);
 }
 
 .task .actions .save{
@@ -155,7 +156,7 @@ main {
 }
 
 .task .actions .delete {
-	color: crimson;
+	color: var(--light);
 }
 
 .container{
@@ -164,7 +165,7 @@ main {
 
 .typed-out{
 	overflow: hidden;
-	border-right: .15em solid var(--pink);
+	border-right: .15em solid var(--light);
 	white-space: nowrap;
 	animation: 
 	typing 1s steps(50, end) forwards;
@@ -175,5 +176,11 @@ main {
 	from { width: 0 }
 	to { width: 100% }
   }
-
-  
+.moreprojects{
+	color: var(--light);
+	position: absolute;
+	top: 0; 
+	right: 0; 
+	width: 100px; 
+	text-align:right;
+}
